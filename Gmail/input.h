@@ -2,6 +2,7 @@
 #define INPUT_H_INCLUDED
 
 void placeChar(int *input);
-void addLine(int lineNumber);
+void addLine(int lineNumb);
+void removeLine(int lineNum);
 
 #endif
