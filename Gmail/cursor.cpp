@@ -64,7 +64,16 @@ void placeCursor(int *input) {
 		}
 	}
 	
+	else if(input = DELETE_KEY) {
+		if(currentCursor.charPosition = lineSize[currentCursor.line] && currentCursor.line = lineNumber);
+		if(currentCursor.charPosition = lineSize[currentCursor.line]) {
+			removeLine();
+			updateLine();
+		}
+	}
+	
 	else if(input[0] <= 32 || input[0] >= 126) {
 		placeChar(input);
+		lineSize[currentCursor.line]++;
 	}
 }
