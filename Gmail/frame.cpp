@@ -14,4 +14,10 @@ void displayFrame() {
 		std::cout << line[i];
 }
 
-void updateFrame();
+void updateFrame() {
+	
+}
+
+void updateLine() {
+	
+}
