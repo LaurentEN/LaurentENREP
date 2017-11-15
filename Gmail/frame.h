@@ -10,5 +10,7 @@ std::vector<std::string> frame(FRAME_SIZE);
 
 struct frame;
 void displayFrame();
+void updateFrame();
+void updateLine(int lineNum);
 
 #endif
