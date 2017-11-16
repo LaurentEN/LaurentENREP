@@ -71,6 +71,8 @@ void placeCursor(int *input) {
 			removeLine();
 			updateLine();
 		}
+		else
+			placeChar(input);
 	}
 	
 	else if(input[0] <= 32 || input[0] >= 126) {
