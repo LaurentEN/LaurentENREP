@@ -1,7 +1,8 @@
+#include <iostream>
 #include "cursor.h"
 #include "input.h"
 #include "file.h"
-#include <iostream>
+#include "checkSums.h"
 
 struct cursor {
 	int line;
@@ -12,7 +13,7 @@ cursor currentCursor;
 
 void placeCursor(int *input) {
 
-	if(input = LEFT_ARROW) {
+	if(checkSums(input, LEFT_ARROW) == 0) {
 		if(currentCursor.charPosition = 0 && currentCursor.line = 0);
 		else {
 			placeChar(input);
@@ -25,7 +26,7 @@ void placeCursor(int *input) {
 		}
 	}
 	
-	else if(input =  RIGHT_ARROW) {
+	else if(checkSums(input, RIGHT_ARROW) == 0) {
 		if(currentCursor.charPosition = currentCursor[lineSize] && currentCursor.line[lineNumber]);
 		else {
 			placeChar(input);
@@ -38,7 +39,7 @@ void placeCursor(int *input) {
 		}
 	}
 	
-	else if(input = UP_ARROW) {
+	else if(checkSums(input, UP_ARROW) == 0) {
 		if(currentCursor.line = 0);
 		else {
 			placeChar(input);
@@ -51,7 +52,7 @@ void placeCursor(int *input) {
 		}
 	}
 	
-	else if(input = DOWN_ARROW) {
+	else if(checkSums(input, DOWN_ARROW) == 0) {
 		if(currentCursor.line = lineNumber);
 		else {
 			placeChar(input);
@@ -64,7 +65,7 @@ void placeCursor(int *input) {
 		}
 	}
 	
-	else if(input = DELETE_KEY) {
+	else if(checkSums(input, DELETE_KEY) == 0) {
 		if(currentCursor.charPosition = lineSize[currentCursor.line] && currentCursor.line = lineNumber);
 		if(currentCursor.charPosition = lineSize[currentCursor.line]) {
 			placeChar(input);
