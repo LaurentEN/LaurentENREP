@@ -10,5 +10,6 @@ int DELETE_KEY[4] = {27, 91, 51, 126};
 struct cursor;
 
 void placeCursorInStruct(int *input);
+void placeCursorInFrame();
 
 #endif
