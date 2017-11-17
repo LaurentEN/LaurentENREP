@@ -81,3 +81,18 @@ void placeCursorInStruct(int *input) {
 		lineSize[currentCursor.line]++;
 	}
 }
+
+void placeCursorInFrame() {
+	int lineNum = lineNumber;
+	int line(lineNumber);
+	int charPosition(lineSize[lineNum]);
+	while(line != currentCursor.line && charPosition != currentCursor.charPosition) {
+		std::cout << LEFT_ARROW[0] << LEFT_ARROW[1] << LEFT_ARROW[2];
+		if(charPosition == 0) {
+			line--;
+			charPosition = lineSize[lineNum--];
+		}
+		else
+			charPosition--;
+	}
+}
