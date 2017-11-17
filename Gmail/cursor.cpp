@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include "cursor.h"
 #include "input.h"
 #include "file.h"
