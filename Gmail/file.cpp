@@ -27,7 +27,6 @@ void checkFile(char *filename) {
         fclose(open);
         open = fopen(filename, "w");
         fclose(open);
-
     }
 
     else if(open = fopen(filename, "r")) {
