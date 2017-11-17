@@ -87,12 +87,13 @@ void placeCursorInFrame() {
 	int line(lineNumber);
 	int charPosition(lineSize[lineNum]);
 	while(line != currentCursor.line && charPosition != currentCursor.charPosition) {
-		std::cout << LEFT_ARROW[0] << LEFT_ARROW[1] << LEFT_ARROW[2];
+		for(int i = 0; i <= 2; i++)
+			printf("%c", LEFT_ARROW[i]);
 		if(charPosition == 0) {
 			line--;
 			charPosition = lineSize[lineNum--];
 		}
-		else
+		else if(charPosition > 0)
 			charPosition--;
 	}
 }
