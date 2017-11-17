@@ -11,7 +11,7 @@ struct cursor {
 
 cursor currentCursor;
 
-void placeCursor(int *input) {
+void placeCursorInStruct(int *input) {
 
 	if(checkSums(input, LEFT_ARROW) == 0) {
 		if(currentCursor.charPosition = 0 && currentCursor.line = 0);
