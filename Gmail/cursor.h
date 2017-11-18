@@ -6,6 +6,7 @@ int DOWN_ARROW[3] = {27, 91, 66};
 int RIGHT_ARROW[3] = {27, 91, 67};
 int LEFT_ARROW[3] = {27, 91, 68};
 int DELETE_KEY[4] = {27, 91, 51, 126};
+int ENTER_KEY = 10;
 
 struct cursor;
 
