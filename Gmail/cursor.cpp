@@ -77,9 +77,12 @@ void placeCursorInStruct(int *input) {
 			placeChar(input);
 	}
 	
+	else if(input[0] == "ENTER_KEY");
+	
 	else if(input[0] <= 32 || input[0] >= 126) {
 		placeChar(input);
 		lineSize[currentCursor.line]++;
+		currentCursor.charPosition++;
 	}
 }
 
