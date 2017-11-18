@@ -2,5 +2,5 @@
 #include <ncurses.h>
 
 void inputHandler() {
-
+    
 }
